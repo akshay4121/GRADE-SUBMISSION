@@ -17,19 +17,21 @@ public class GradeController {
 
     GradeService gradeService = new GradeService();
 
+    //GET request handler for the form
     @GetMapping("/")
     public String getForm(Model model, @RequestParam(required = false) String id) {
         model.addAttribute("grade", gradeService.getGradeById(id));
         return "form";
     }
 
+    // POST request handler for form submission
     @PostMapping("/handleSubmit")
     public String submitForm(@Valid Grade grade, BindingResult result) {
         if (result.hasErrors()) return "form";
         gradeService.submitGrade(grade);
         return "redirect:/grades";
     }
-
+    // GET request handler for displaying all grades
     @GetMapping("/grades")
     public String getGrades(Model model) {
         model.addAttribute("grades", gradeService.getGrades());
