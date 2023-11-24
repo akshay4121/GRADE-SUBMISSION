@@ -10,7 +10,7 @@
   .update
   {
      display: inline-block;
-     width: 100%;      
+     width: 40%;      
      height: 100%;
      margin-bottom: 0.5em;
      padding-top: .6em;
@@ -23,8 +23,25 @@
      border-radius: 5px;
      border: solid white 2px;
   }
+
+  .delete
+  {
+     display: inline-block;
+     width: 40%;      
+     height: 100%;
+     margin-bottom: 0.5em;
+     padding-top: .6em;
+     padding-bottom: .6em;
+     text-align: center;
+     font-size: 16px;
+     text-decoration: none;
+     color: #fff;
+     background-color: #ed141f;
+     border-radius: 5px;
+     border: solid white 2px;
+  }
   
-  .update:hover {
+  .update:hover, .delete:hover{
     background-color: orange; 
     cursor: pointer;
   }

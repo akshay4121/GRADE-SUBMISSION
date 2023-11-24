@@ -19,6 +19,11 @@ public class GradeRepository {
         studentGrades.add(grade);
     }
 
+    //delete grade from the list
+    public void deleteGrade(int index){
+        studentGrades.remove(index);
+    }
+
     // Update grade at index
     public void updateGrade(Grade grade, int index) {
         studentGrades.set(index, grade);

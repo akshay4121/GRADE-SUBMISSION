@@ -3,6 +3,7 @@
   <head> 
     <title>Grades</title>
     <link th:href="@{/grades-stylesheet.css}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -23,7 +24,11 @@
           <td th:text="${grade.name}"></td>
           <td th:text="${grade.subject}"></td>
           <td th:text="${grade.score}"></td>
-          <td> <a role="button" class="update" th:href="@{/(id = ${grade.id})}">Update</a> </td>
+          <td> <a role="button" class="update" th:href="@{/(id = ${grade.id})}"> <i class="fa fa-pencil"></i>
+          </a> 
+          <a role="button" class="delete" th:href="@{/delete/(id = ${grade.id})}"> <i class="fa fa-trash-o"></i>
+          </a> 
+        </td>
         </tr>
       </table>
     </div>

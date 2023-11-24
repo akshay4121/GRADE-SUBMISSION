@@ -21,6 +21,11 @@ public class GradeService {
     public void updateGrade(Grade grade, int index) {
         gradeRepository.updateGrade(grade, index);
     }
+
+    public void deleteGrade(String id){
+        int index = getGradeIndex(id);
+        gradeRepository.deleteGrade(index);
+    }
     
     public List<Grade> getGrades() {
         return gradeRepository.getGrades();
