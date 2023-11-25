@@ -15,16 +15,14 @@ This project is based on the [Spring Boot](http://projects.spring.io/spring-boot
 - Spring MVC (Tomcat)
 - [Thymleaf](https://thymeleaf.org)
 
-## Installation 
-The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
+## Getting Started
 
-
-## Usage 
-Run the project through the IDE and head out to [http://localhost:8080](http://localhost:8080)
-
-or 
-
-run this command in the command line:
+The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies.
+First Run the server:
 ```
 ./mvnw clean spring-boot:run
 ```
+
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the results.
+
+
