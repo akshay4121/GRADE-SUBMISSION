@@ -12,7 +12,7 @@ Grade Submission demonstrates how to implement simple CRUD operations with a 'Gr
 This project is based on the [Spring Boot](http://projects.spring.io/spring-boot/) project and uses these packages :
 - Maven
 - Spring Core
-- Spring MVC (Tomcat)
+- Spring MVC 
 - [Thymleaf](https://thymeleaf.org)
 
 ## Getting Started
