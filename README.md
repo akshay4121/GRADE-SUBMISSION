@@ -1,4 +1,4 @@
-# GRADE SUBMISSION MANAGEMENT SYSTEM
+# GRADE MANAGEMENT SYSTEM
 
 Grade Submission demonstrates how to implement simple CRUD operations with a 'Grade' entity.
 
